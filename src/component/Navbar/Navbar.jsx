@@ -3,12 +3,12 @@ import ShoppingCard from '../../assets/shopping-cart.png';
 const Navbar = () => {
     return (
         <nav>
-<div className="max-w-7xl mx-auto navbar justify-between">
+<div className="max-w-7xl mx-auto navbar justify-between flex-col lg:flex-row">
   <div >
     <a className="text-4xl font-bold bg-linear-to-b from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] bg-clip-text text-transparent">DigiTools</a>
   </div>
-  <div className='text-[#101727]'>
-    <ul className="flex gap-4 menu menu-horizontal px-1">
+  <div className='text-[#101727] '>
+    <ul className="flex gap-4 menu sm:menu-horizontal px-1 items-center">
         <li><a>Products</a></li>
         <li><a>Features</a></li>
         <li><a>Pricing</a></li>
@@ -16,12 +16,12 @@ const Navbar = () => {
         <li><a>FAQ</a></li>
     </ul>
   </div>
-  <div className="flex space-x-4">
+  <div className="flex space-x-3">
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
             <img className='w-[24px]' src={ShoppingCard} alt="Shopping-Cart" />
-            <span className="badge  indicator-item rounded-full  bg-red-500 text-sm text-white py-1 px-2">8</span>
+            <span className="badge badge-xs  indicator-item  bg-red-500 text-xs text-white p-1">8</span>
         </div>
       </div>
       <div
@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-    <div className="flex gap-2">
+    <div className="flex gap-4">
       <button>Login</button>
       <button className='btn btn-primary bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white rounded-3xl'>Get Started</button>
     </div>
