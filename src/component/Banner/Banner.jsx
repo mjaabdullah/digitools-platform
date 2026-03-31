@@ -1,3 +1,4 @@
+import { CiPlay1 } from "react-icons/ci";
 import BannerImg from "../../assets/banner.png";
 import CircleImg from "../../assets/circle.png";
 const Banner = () => {
@@ -20,8 +21,11 @@ const Banner = () => {
         Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
       </p>
       <div className="flex gap-2 flex-wrap">
-        <button className='btn btn-primary bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white rounded-3xl'>Explore Products</button>
-      <button className='btn btn-outline btn-primary rounded-3xl'>Explore Products</button>
+        <button className='btn btn-primary bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white rounded-3xl'>Explore Products</button>
+      <button className='btn btn-outline btn-primary rounded-3xl hover:bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] hover:text-white flex justify-center items-center gap-2'>
+        <span><CiPlay1 /></span>
+        <span>Watch Demo</span>
+        </button>
       </div>
     </div>
     </div>

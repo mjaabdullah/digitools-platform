@@ -2,7 +2,7 @@ import ShoppingCard from '../../assets/shopping-cart.png';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className='bg-white md:sticky top-0 z-50'>
 <div className="max-w-7xl mx-auto navbar justify-between flex-col lg:flex-row">
   <div >
     <a className="text-4xl font-bold bg-linear-to-b from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] bg-clip-text text-transparent">DigiTools</a>
@@ -38,7 +38,7 @@ const Navbar = () => {
     </div>
     <div className="flex gap-4">
       <button>Login</button>
-      <button className='btn btn-primary bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white rounded-3xl'>Get Started</button>
+      <button className='btn btn-primary bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white rounded-3xl'>Get Started</button>
     </div>
   </div>
 </div>
