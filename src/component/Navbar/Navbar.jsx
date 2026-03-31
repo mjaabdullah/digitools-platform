@@ -1,6 +1,6 @@
 import ShoppingCard from '../../assets/shopping-cart.png';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
         <nav className='bg-white md:sticky top-0 z-50'>
 <div className="max-w-7xl mx-auto navbar justify-between flex-col lg:flex-row">
@@ -21,7 +21,7 @@ const Navbar = () => {
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
             <img className='w-[24px]' src={ShoppingCard} alt="Shopping-Cart" />
-            <span className="badge badge-xs  indicator-item  bg-red-500 text-xs text-white p-1">8</span>
+            {cart.length > 0 && (<span className="badge badge-xs  indicator-item  bg-red-500 text-xs text-white p-1">{cart.length}</span>)}
         </div>
       </div>
       <div

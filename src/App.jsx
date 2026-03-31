@@ -12,10 +12,10 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+    <Navbar cart={cart} />
     <Banner/>
     <Rating/>
-    <Tools card={cart} setCard={setCart}/>
+    <Tools cart={cart} setCart={setCart}/>
 
     </>
   )

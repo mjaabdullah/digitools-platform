@@ -30,14 +30,14 @@ const tabManager = (tab) => {
   <input type="radio" name="products-tab" className="tab rounded-3xl px-6 font-semibold checked:bg-linear-to-r checked:from-[rgba(79,57,246,1)] checked:to-[rgba(149,20,250,1)] checked:text-white" aria-label="Products" checked={currentTab === "Products"}
   onClick={() => tabManager('Products')}
   />
-  <input type="radio" name="card-tab" className="tab rounded-3xl px-6 font-semibold checked:bg-linear-to-r checked:from-[rgba(79,57,246,1)] checked:to-[rgba(149,20,250,1)] checked:text-white" aria-label="Card (2)" checked={currentTab === "Card"}
-  onClick={()=> tabManager('Card')}
+  <input type="radio" name="card-tab" className="tab rounded-3xl px-6 font-semibold checked:bg-linear-to-r checked:from-[rgba(79,57,246,1)] checked:to-[rgba(149,20,250,1)] checked:text-white" aria-label={`Cart (${cart.length})`} checked={currentTab === "Cart"}
+  onClick={()=> tabManager('Cart')}
   />
-</div>
+            </div>
 
-    <div>
+    <div className="w-full">
            {(currentTab === "Products") ? 
-           <Products productPromise={productPromise} cart={cart} setCart={setCart}/> : <Cart/>
+           <Products productPromise={productPromise} cart={cart} setCart={setCart}/> : <Cart cart={cart} setCart={setCart}/>
            }     
 
     </div>
