@@ -1,16 +1,25 @@
-# React + Vite
+# DigiTools - Premium Digitals Tools Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### A beautiful and modern React-based digital product marketplace to browse, add to cart, and purchase premium productivity tools.
 
-Currently, two official plugins are available:
+এই প্রজেক্টে আমি প্রিমিয়াম ডিজিটাল টুলস (AI Writing, Design Templates, Stock Assets, Automation Tools ইত্যাদি) এক জায়গায় সুন্দরভাবে প্রেজেন্ট করেছি।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Modern & Clean UI** — Responsive product cards with "Best Seller", "Popular" এবং "New" badges
+- **Smart Shopping Cart** — Add to cart, remove item, duplicate prevention, real-time total calculation
+- **Beautiful Notifications** — Success এবং warning toast messages
+- **Interactive Pricing** — Monthly ও One-time pricing সহ dynamic cards
+- **Smooth UX** — Hover effects এবং gradient buttons
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- **React.js** (Vite)
+- **Tailwind CSS**
+- **DaisyUI** — Beautiful components and styling
+- **JavaScript (ES6+)**
+- **React Toast** — For elegant notifications

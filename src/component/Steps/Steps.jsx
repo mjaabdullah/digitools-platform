@@ -19,11 +19,11 @@ const Steps = () => {
 </div>
 
 <div className='flex justify-center items-center'>
-      <div className="w-20 h-20 rounded-full bg-linear-to-r from-[rgba(79,57,246,0.1)] to-[rgba(149,20,250,0.1)] flex justify-center items-center">
+      <div className="w-18 h-18 rounded-full bg-linear-to-r from-[rgba(79,57,246,0.1)] to-[rgba(149,20,250,0.1)] flex justify-center items-center">
     <img 
       src={userImg}
       
-      className="rounded-full max-w-14 " />
+      className="rounded-full max-w-12 " />
   </div>
 </div>
   <div className="card-body items-center text-center">
@@ -41,11 +41,11 @@ const Steps = () => {
 </div>
 
 <div className='flex justify-center items-center'>
-      <div className="w-20 h-20 rounded-full bg-linear-to-r from-[rgba(79,57,246,0.1)] to-[rgba(149,20,250,0.1)] flex justify-center items-center">
+      <div className="w-18 h-18 rounded-full bg-linear-to-r from-[rgba(79,57,246,0.1)] to-[rgba(149,20,250,0.1)] flex justify-center items-center">
     <img 
       src={packageImg}
       
-      className="rounded-full max-w-14 " />
+      className="rounded-full max-w-12 " />
   </div>
 </div>
   <div className="card-body items-center text-center">
@@ -63,11 +63,11 @@ const Steps = () => {
 </div>
 
 <div className='flex justify-center items-center'>
-      <div className="w-20 h-20 rounded-full bg-linear-to-r from-[rgba(79,57,246,0.1)] to-[rgba(149,20,250,0.1)] flex justify-center items-center">
+      <div className="w-18 h-18 rounded-full bg-linear-to-r from-[rgba(79,57,246,0.1)] to-[rgba(149,20,250,0.1)] flex justify-center items-center">
     <img 
       src={rocketImg}
       
-      className="rounded-full max-w-14" />
+      className=" w-10" />
   </div>
 </div>
   <div className="card-body items-center text-center">

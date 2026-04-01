@@ -1,5 +1,6 @@
 [
   {
+    "Id": 1,
     "Name": "AI Writing Pro",
     "TagType": "Best Seller",
     "Icon": "ai-writing.png",
@@ -13,6 +14,7 @@
     ]
   },
   {
+    "Id": 2,
     "Name": "Design Templates Pack",
     "TagType": "Popular",
     "Icon": "design-tool.png",
@@ -22,6 +24,7 @@
     "Features": ["2000+ templates", "Monthly updates", "Commercial license"]
   },
   {
+    "Id": 3,
     "Name": "Premium Stock Assets",
     "TagType": "New",
     "Icon": "shopping-cart.png",
@@ -31,6 +34,7 @@
     "Features": ["10M+ assets", "Commercial use", "No attribution"]
   },
   {
+    "Id": 4,
     "Name": "Automation Toolkit",
     "TagType": "Popular",
     "Icon": "operation.png",
@@ -40,6 +44,7 @@
     "Features": ["50+ automations", "API access", "Custom workflows"]
   },
   {
+    "Id": 5,
     "Name": "Resume Builder Pro",
     "TagType": "New",
     "Icon": "portfolio.png",
@@ -49,6 +54,7 @@
     "Features": ["100+ templates", "ATS optimization", "Export to PDF"]
   },
   {
+    "Id": 6,
     "Name": "Social Media Content Kit",
     "TagType": "Best Seller",
     "Icon": "social-media.png",

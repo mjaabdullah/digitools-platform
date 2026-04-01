@@ -9,19 +9,21 @@ import Pricing from './component/Pricing/Pricing'
 import Rating from './component/Rating/Rating'
 import Steps from './component/Steps/Steps'
 import Tools from './component/Tools/Tools'
+import Workflow from './component/Workflow/Workflow'
 
 function App() {
   const [cart, setCart] = useState([]);
-  
+  const [currentTab, setCurrentTab] = useState('Products');
 
   return (
     <>
-    <Navbar cart={cart} />
+    <Navbar cart={cart} setCurrentTab={setCurrentTab}/>
     <Banner/>
     <Rating/>
-    <Tools cart={cart} setCart={setCart}/>
+    <Tools cart={cart} setCart={setCart} currentTab={currentTab} setCurrentTab={setCurrentTab}/>
     <Steps/>
     <Pricing/>
+    <Workflow/>
     <Footer/>
     <ToastContainer />
 

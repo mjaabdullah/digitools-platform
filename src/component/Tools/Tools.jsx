@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Cart from "../Cart/Cart";
 import Products from "../Products/Products";
 
@@ -9,9 +8,9 @@ const getProducts = async () => {
 
 const productPromise = getProducts();
 
-const Tools = ({cart, setCart}) => {
+const Tools = ({cart, setCart, currentTab, setCurrentTab}) => {
 
-const [currentTab, setCurrentTab] = useState('Products');
+
 
 const tabManager = (tab) => {
 
