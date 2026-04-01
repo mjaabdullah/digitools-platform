@@ -1,8 +1,9 @@
 
 const Card = ({price}) => {
     return (
-        <div className="card bg-base-100 shadow-sm">
-  <div className="card-body">
+<div className={`card bg-base-100 shadow-sm ${price.popular && 'bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white'}`}>
+  <div className="card-body relative">
+    {price.popular && (<div className="absolute -top-3 left-0 right-0 mx-auto badge badge-strong badge-warning">Most Popular</div>)}
     <h2 className="text-2xl font-bold">{price.plan}</h2>
     <p>
         {price.subtitle}
@@ -23,8 +24,14 @@ const Card = ({price}) => {
       }      
     </ul>
     <div className="mt-1">
-      <button className={`btn btn-block text-white rounded-3xl bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]
-      }`}>{price.buttonText}</button>
+      <button
+      className={`w-full py-2 rounded-3xl font-semibold text-base transition-all ${price.popular 
+        ? "bg-white text-purple-600 hover:bg-gray-100" 
+        : "bg-linear-to-r from-purple-600 to-violet-600 text-white hover:brightness-110"
+      }`}
+    >
+      {price.buttonText}
+    </button>
     </div>
   </div>
         </div>

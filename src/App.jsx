@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Banner from './component/Banner/Banner'
+import Footer from './component/Footer/Footer'
 import Navbar from './component/Navbar/Navbar'
 import Pricing from './component/Pricing/Pricing'
 import Rating from './component/Rating/Rating'
@@ -20,6 +21,7 @@ function App() {
     <Tools cart={cart} setCart={setCart}/>
     <Steps/>
     <Pricing/>
+      <Footer/>
 
     </>
   )
