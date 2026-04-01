@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import ShoppingCard from '../../assets/shopping-cart.png';
 const getImage = (imageName) => {
   return new URL(`../../assets/products/${imageName}`, import.meta.url).href;
@@ -7,6 +8,11 @@ const Cart = ({cart, setCart}) => {
     const handleDelete = (product)=> {
         const filterCart = cart.filter(item => item.Name !== product.Name);
         setCart([...filterCart]);
+        toast.success('Successfully Deleted!')
+    }
+    const checkoutFunc = ()=> {
+        setCart([]);
+        toast.success('Order placed successfully!');
     }
     return (
         <div className=" bg-base-100 shadow-sm p-5 mt-10">
@@ -35,7 +41,7 @@ const Cart = ({cart, setCart}) => {
         <span className="text-2xl">Total:</span>
         <span className="font-bold text-2xl">${cart.reduce((sum, item) => sum + item.Price, 0)}</span>
     </div>
-    <button onClick={()=> setCart([])} className="btn btn-block text-white rounded-3xl bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] py-4  text-xl">Proceed to Checkout</button>
+    <button onClick={checkoutFunc} className="btn btn-block text-white rounded-3xl bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] py-4  text-xl">Proceed to Checkout</button>
     </>
     )}
 

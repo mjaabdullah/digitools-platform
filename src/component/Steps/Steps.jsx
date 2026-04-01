@@ -3,8 +3,8 @@ import rocketImg from '../../assets/rocket.png';
 import userImg from '../../assets/user.png';
 const Steps = () => {
     return (
-        <div className='max-w-7xl mx-auto my-10'>
-            <div className='my-7 flex flex-col items-center gap-3'>
+        <div className='max-w-7xl mx-auto my-10 p-3'>
+            <div className='my-7 flex flex-col items-center gap-3 text-center'>
                 <h1 className='font-extrabold text-2xl md:text-5xl'>Get Started in 3 Steps</h1>
             <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
             </div>

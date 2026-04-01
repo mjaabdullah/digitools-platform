@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 import './App.css'
 import Banner from './component/Banner/Banner'
 import Footer from './component/Footer/Footer'
@@ -21,7 +22,8 @@ function App() {
     <Tools cart={cart} setCart={setCart}/>
     <Steps/>
     <Pricing/>
-      <Footer/>
+    <Footer/>
+    <ToastContainer />
 
     </>
   )

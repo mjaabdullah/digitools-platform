@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const getImage = (imageName) => {
   return new URL(`../../assets/products/${imageName}`, import.meta.url).href;
@@ -11,9 +12,11 @@ const Product = ({product, cart, setCart}) => {
       
       const found = cart.find(i => i.Name === item.Name);
       if(found) {
-        alert('item already exist');
+        toast.warning('Item already exist!');
+        
       } else {
         setCart([...cart,item]);
+        toast.success('Successfully Added to Cart!')
       }
 
     }
