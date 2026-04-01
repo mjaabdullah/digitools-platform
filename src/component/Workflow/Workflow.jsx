@@ -2,10 +2,10 @@
 const Workflow = () => {
     return (
         <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
-        <div className="max-w-7xl mx-auto space-y-3 flex flex-col items-center px-3 py-28">
+        <div className="max-w-7xl mx-auto space-y-3 flex flex-col items-center px-3 py-28 text-center">
             <h1 className="font-extrabold text-xl lg:text-4xl">Ready to Transform Your Workflow?</h1>
             <p>Join thousands of professionals who are already using DigiTools to work smarter. Start your free trial today.</p>
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
                 <button
       className={` py-2 px-8 rounded-3xl font-semibold text-base transition-all bg-white text-purple-600`}     
     >
