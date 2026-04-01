@@ -18,23 +18,13 @@ const Navbar = ({cart}) => {
   </div>
   <div className="flex space-x-3">
     <div className="dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+      <div role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
             <img className='w-[24px]' src={ShoppingCard} alt="Shopping-Cart" />
             {cart.length > 0 && (<span className="badge badge-xs  indicator-item  bg-red-500 text-xs text-white p-1">{cart.length}</span>)}
         </div>
       </div>
-      <div
-        tabIndex={0}
-        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
-        <div className="card-body">
-          <span className="text-lg font-bold">8 Items</span>
-          <span className="text-info">Subtotal: $999</span>
-          <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
-          </div>
-        </div>
-      </div>
+
     </div>
     <div className="flex gap-4">
       <button>Login</button>

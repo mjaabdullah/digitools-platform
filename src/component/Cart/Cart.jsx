@@ -9,7 +9,7 @@ const Cart = ({cart, setCart}) => {
         setCart([...filterCart]);
     }
     return (
-        <div className="w-full bg-base-100 shadow-sm p-5 mt-10">
+        <div className=" bg-base-100 shadow-sm p-5 mt-10">
             <h3 className="font-bold text-2xl mb-6">Your Cart</h3>
             <div className="space-y-4">
                 
@@ -41,7 +41,7 @@ const Cart = ({cart, setCart}) => {
 
     {cart.length === 0 && (
         <>
-        <div className='w-full flex flex-col items-center text-gray-500'>
+        <div className='w-full flex flex-col gap-3 items-center justify-center text-gray-500 py-7'>
             <img className='max-w-28' src={ShoppingCard} alt="" />
             <p>Your cart is empty!</p>
         </div>

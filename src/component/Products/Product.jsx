@@ -18,9 +18,12 @@ const Product = ({product, cart, setCart}) => {
 
     }
     return (
-        <div className="card w-96 bg-base-100 shadow-sm">
+        <div className="card bg-base-100 shadow-sm">
   <div className="card-body">
-    <div className="badge badge-xs badge-warning self-end">{product.TagType}</div>
+    <div className={`badge badge-sm ${
+                  product.TagType === "Best Seller" ? "badge-warning" : 
+                  product.TagType === "Popular" ? "badge-primary" : "badge-success"
+                } self-end`}>{product.TagType}</div>
     <div className="w-10 h-10 rounded-full ring-1 ring-gray-200 flex justify-center items-center"><img className="max-w-6 max-h-6" src={getImage(product.Icon)} alt="" /></div>
     <h2 className="text-2xl font-bold">{product.Name}</h2>
     <p>
@@ -47,7 +50,7 @@ const Product = ({product, cart, setCart}) => {
       }`}>{addedToCart ? 'Added to Cart!': 'Buy Now'}</button>
     </div>
   </div>
-</div>
+        </div>
     );
 };
 
